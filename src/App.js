@@ -5,6 +5,7 @@ import Twowaybinding from "./component/twobinding";
 import OneTwowaybinding from "./component/onetwobinding";
 import OneTwowaybinding2 from "./component/onetwobinding2";
 import ToDoList from "./component/todolist";
+import Mount from "./component/unmount";
 function App() {
   return (
     <Router>
@@ -29,6 +30,9 @@ function App() {
             <li>
               <Link to="/bt4">ToDo List</Link>
             </li>
+            <li>
+              <Link to="/bt5">Mount and Unmount</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -38,9 +42,10 @@ function App() {
           <Route path="/bt2" element={<OneTwowaybinding />}></Route>
           <Route path="/bt3" element={<OneTwowaybinding2 />}></Route>
           <Route path="/bt4" element={<ToDoList />}></Route>
-          
+          <Route path="/bt5" element={<Mount />}></Route>
         </Routes>
       </div>
+      
     </Router>
   );
 }
